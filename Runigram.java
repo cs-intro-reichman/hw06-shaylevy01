@@ -47,7 +47,7 @@ public class Runigram {
 		// print(newC);
 
 		// Tests morphing of two pictures:
-		//morph(cake,tinypic,3);
+		// morph(cake,tinypic,3);
 
 		//// Write here whatever code you need in order to test your work.
 		//// You can reuse / overide the contents of the imageOut array.
@@ -214,7 +214,7 @@ public class Runigram {
 		}
 		Color[][] newImage = new Color[source.length][source[0].length];
 		for (int i=0 ; i<=n ; i++){
-			newImage = blend(source, target, (double) ((n - i) / n));
+			newImage = blend(source, target, ((double) (n - i) / (double) n));
 			display(newImage);
 			StdDraw.pause(500);
 		}
